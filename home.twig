@@ -1,0 +1,39 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+{% include "includes/header.twig" %}
+
+<div class="profile-header">
+    <div class="header-wrapper container">
+        <div class="widgetcontent-left">
+            {{widget('extendednavigation', 'extendednavigation', { 'align': 'left'})|raw}}
+        </div>
+        <div class="widgetprofile-right">
+            {{widget('profile', 'headerprofilesocialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+        </div>
+    </div>
+</div>
+
+{{widget('feature', 'feature', {
+    "header": "profile",
+    "defaultBgImg": asset('images/feature.jpg'),
+    "positionTopPercentage": "50",
+    "showBtn": true,
+    "buttonText": "Lorem Ipsum"
+})|raw}}
+
+	<!-- Page Content -->
+	<section class="template-content">
+        <div class="container">
+
+		    <!-- Main Widet Zone -->
+	   	    {{zone('main')|raw}}
+
+        </div>
+	</section>
+	<!-- End Page Content -->
+
+{% include "includes/footer.twig" %}
+
+{% endblock %}
