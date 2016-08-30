@@ -2,7 +2,7 @@
     "name":"Jim Jones",
     "thumbnail":"thumbnail.png",
     "screenshot":"jim-jones-screenshot.jpg",
-    "pageTypes":["home"],
+    "pageTypes":["home", "donate"],
     "templateType":"standard",
     "widgetVersion":2,
     "images":[
