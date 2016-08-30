@@ -50,12 +50,13 @@
 // ---------------
 
 .navigation-item {
-        border-right: 1px solid #f3f3f3;
+    border-right: 1px solid #f3f3f3;
     &:last-child {
         border-right: 1px solid transparent;
     }
 	@media @tablet {
 		width: 100%;
+        border-right: 0;
 	}
 }
 
@@ -146,6 +147,8 @@
 	@media @tablet {
 		position: relative;
 		top: 0;
+        background-color: @color-swatch7;
+        padding: 10px 0;
 		.navigation-item:hover & {
 			display: none;
 		}
@@ -176,6 +179,7 @@
         border-radius: 0;
         outline: 0;
         border: 0;
+        background-color: transparent;
         &:before {
             content: '';
             position: absolute;
@@ -186,8 +190,8 @@
             right: 0;
             margin-top: 15px;
             margin-left: -13px;
-            background: @color-swatch7;
-            box-shadow: 0 6px 0 @color-swatch7;
+            background: @color-swatch3;
+            box-shadow: 0 6px 0 @color-swatch3;
             .transition( all, 0.5s, ease );
         }
         &:after {
@@ -200,27 +204,28 @@
             right: 0;
             margin-top: 15px;
             margin-left: -13px;
-            background: @color-swatch7;
+            background: @color-swatch3;
             .transition( all, 0.5s, ease );
         }
     }
     .navigation-toggle:hover {
         border: 0;
+        background-color: transparent;
             &:before {
-                background: @color-swatch7;
-                box-shadow: 0 6px 0 @color-swatch7;
+                background: @color-swatch3;
+                box-shadow: 0 6px 0 @color-swatch3;
             }
             &:after {
-                background: @color-swatch7;
+                background: @color-swatch3;
             }
     }
     // Toggle Button Open State
     .open & {
         &.navigation-toggle {
-            background-color: @color-swatch3;
+            background-color: transparent;
             &:before {
                 margin-top: 21px;
-                background: @color-swatch7;
+                background: @color-swatch3;
                 box-shadow: none;
                 -webkit-transform: rotate(45deg);
                 -moz-transform: rotate(45deg);
@@ -239,7 +244,7 @@
                 right: 0;
                 margin-top: 21px;
                 margin-left: -13px;
-                background: @color-swatch7;
+                background: @color-swatch3;
                 box-shadow: none;
                 -webkit-transform: rotate(-45deg);
                 -moz-transform: rotate(-45deg);
