@@ -1,4 +1,4 @@
-Appear
+Jim Jones
 =========
 
-Basekit v8 Template
+Afilias V8 Template
