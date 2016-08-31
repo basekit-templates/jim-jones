@@ -127,7 +127,7 @@
     background-size: cover;
     display: table;
     min-height: 500px;
-    height: 600px;
+    height: 500px;
     width: 100%;
     @media @tablet {
         min-height: 300px;
@@ -1073,24 +1073,14 @@ input.input[type=search],
             margin-bottom: 0;
         }
     }
-    .twitter__avatar {
-        float: right;
-        margin-left: 20px;
-        margin-right: 0;
-        @media @tablet {
-            display: block;
-            float: initial;
-            margin-left: 0;
-        }
+    .twitter {
+        background-color: transparent;
     }
-    .twitter__tweet-wrap {
-        padding-right: 70px;
-        @media @tablet {
-            padding-right: 0;
-        }
+    .twitter__avatar {
+        display: none;
     }
     .twitter__tweet-item {
-        max-width: 50%;
+        max-width: 100%;
         float: right;
         @media @tablet {
             float: initial;
@@ -1100,6 +1090,7 @@ input.input[type=search],
     .signupform__form {
         padding: 0;
         border: 0;
+        background-color: transparent;
         &:after {
             display: none;
         }
@@ -1128,6 +1119,7 @@ input.input[type=search],
         float: right;
         @media @tablet {
             float: initial;
+            width: 100%;
         }
         @media @mobile {
             min-width: 250px;
@@ -1142,7 +1134,7 @@ input.input[type=search],
         text-align: left;
     }
     .signupform__button {
-        padding: 2px 40px;
+        padding: 6px 40px;
         width: 100%;
         float: right;
     }
