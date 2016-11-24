@@ -1,21 +1,30 @@
 <!-- Header -->
 <header class="template-header">
+
     <div class="header-wrapper container">
-        <div class="headercontent-wrapper">
+
+        <div class="header-item1">
+
             <div class="header-logo">
                 {{widget('logo', 'sitelogo', {"defaultlogo": asset('images/logo.jpg')})|raw}}
             </div>
+
             <div class="header-companyname">
                 {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
             </div>
-            <div class="header-extendednavigation">
-                 {{widget('content', 'widgetcontentleft', {content: '<p>Lorem ipsum dolor sit amet</p>'})|raw}}
+
+        </div>
+
+        <div class="header-item2">
+
+            <div class="header-basket">
+                {{widget('button', 'button-donate', {'text': 'Donate', 'align':     'widget-align-centre', 'target': '_blank'})|raw}}
             </div>
+
         </div>
-        <div class="header-basket">
-            {{widget('button', 'button-donate', {'text': 'Donate', 'align': 'widget-align-centre', 'target': '_blank'})|raw}}
-        </div>
+
     </div>
+
 </header>
 
 <!-- End Header -->
